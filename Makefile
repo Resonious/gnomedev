@@ -1,3 +1,7 @@
-all:
+image:
 	docker build -t gnomedev .
-.PHONY: all
+.PHONY: image
+
+run:
+	exec docker run -it --rm gnomedev bash
+.PHONY: run
